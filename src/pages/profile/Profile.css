@@ -1,0 +1,73 @@
+.profile-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.profile-card {
+  background-color: #6fcf97;
+  color: white;
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.avatar {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-info {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.edit-btn {
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #2d9cdb;
+  font-weight: 600;
+  font-size: 16px;
+}

@@ -1,0 +1,80 @@
+
+body.light {
+  --bg-color: #f9fafb;
+  --text-color: #1a202c;
+  --nav-bg: #ffffff;
+  --nav-link: #4a5568;
+  --nav-active: #2b6cb0;
+}
+
+body.dark {
+  --bg-color: #1a202c;
+  --text-color: #f1f1f1;
+  --nav-bg: #2d3748;
+  --nav-link: #e2e8f0;
+  --nav-active: #63b3ed;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.navbar {
+  background-color: var(--nav-bg);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--nav-link);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: var(--nav-active);
+}
+
+.nav-item.active {
+  color: var(--nav-active);
+  font-weight: 600;
+  border-bottom: 2px solid var(--nav-active);
+  padding-bottom: 4px;
+}
+
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.theme-toggle:hover {
+  transform: rotate(20deg);
+}
